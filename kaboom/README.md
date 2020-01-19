@@ -17,7 +17,7 @@ The main trick was to not blindly use `upx -d` to unpack the binary, as this wou
 - try to repack the unpacked binary and notice that the size is smaller than the original... *weird*
 - notice that there are two occurrences of the string `INS` that seem very similar but not really... the first one is followed by the troll YouTube link and the second one looks much more like a real flag: `INS\x8d$\xfe{\xcc\x0fGG EZra\xff\x15\x89\xffp PogU 5H\x10B) Krey\xe9?\xd6\xfegasm <3\x02}` *weird*
 - try to compare the packed binary with another packed binary of your choosing and notice that:
-  - the UPX2 version should not be executable... *weird*
+  - the UPX2 section should not be executable... *weird*
   - the first few instructions do not match... *weird*
 - reverse the jebaited version until you are confident enough that it doesn't actually have the flag
 
